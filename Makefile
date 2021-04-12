@@ -1,8 +1,8 @@
 CC=gcc
 CFLAGS=-I.
 
-calc: calc.o
-	$(CC) -o calc calc.o
+execute: calc.o
+	$(CC) -o execute calc.o
 clean:
-	rm *.o calc
+	rm *.o execute
 
