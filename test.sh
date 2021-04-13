@@ -13,22 +13,22 @@ assert_equals () {
 
 response=$(./execute 2 + 2)
 result="The operation is '2 + 2'
-call asm_sum"
+El resultado es: 4 "
 assert_equals "$response" "$result"
 
-response=$(./execute 2 - 2)
-result="The operation is '2 - 2'
-call asm_sub"
+response=$(./execute 5 - 2)
+result="The operation is '5 - 2'
+El resultado es: 3 "
 assert_equals "$response" "$result"
 
-response=$(./execute 0b101 + 0b11)
-result="The operation is '0b101 + 0b11'
-call asm_sum_bin"
+response=$(./execute 101b + 11b)
+result="The operation is '101b + 11b'
+El resultado es: 1000b"
 assert_equals "$response" "$result"
 
 response=$(./execute 101b - 11b)
 result="The operation is '101b - 11b'
-call asm_sub_bin"
+El resultado es: 10b"
 assert_equals "$response" "$result"
 
 response=$(./execute 0x15 - 0xFF)

@@ -12,7 +12,7 @@ The numbers could be expresed in decimal or binary form.
 ./execute 53 + 312
 ```
 
-* Binary: numbers with a letter 'b' at the end, or a '0b' at the begining. Example:
+* Binary: numbers with a letter 'b' at the end. Example:
 ```bash
-./execute 0b110 + 0b1011
+./execute 110b + 1011b
 ```
